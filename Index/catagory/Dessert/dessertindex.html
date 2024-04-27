@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dessert</title>
+   <link rel="stylesheet" href="Dessertstyle.css">
+</head>
+<body>
+  <h1>Dessert Items</h1>
+    <div class="container">
+        <div class="product-grid">
+            <!-- Product 1 -->
+            <div class="product">
+                <img src="images/Chcolate.jpeg" alt="ChcolateMousse">
+                <div class="product-info">
+                    <h2>ChcolateMousse</h2>
+                    <p>2Cup ChcolateMousse</p>
+                    <p>RS.150</p>
+                    <button class="btn-add-to-cart" onclick="addToCart('ChcolateMousse', 150)">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product">
+                <img src="images/Faloooda.jpeg" alt="Falooda">
+                <div class="product-info">
+                    <h2>Falooda</h2>
+                    <p>1 Glass Falooda</p>
+                    <p>Rs.100</p>
+                    <button class="btn-add-to-cart" onclick="addToCart('Falooda', 100)">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product">
+                <img src="images/Jamun.jpeg" alt="Jamun">
+                <div class="product-info">
+                    <h2>Jamun</h2>
+                    <p>one Box Jumun</p>
+                    <p>Rs.80</p>
+                    <button class="btn-add-to-cart" onclick="addToCart('Jamun', 80)">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="product">
+                <img src="images/rasamalai.jpg" alt="Rasamalai">
+                <div class="product-info">
+                    <h2>Rasamalai</h2>
+                    <p>One box Rasamalai</p>
+                    <p>Rs.180</p>
+                    <button class="btn-add-to-cart" onclick="addToCart('Rasamalai', 180)">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product 5 -->
+            <div class="product">
+                <img src="images/fruit salad.jpeg" alt="Fruit Salad">
+                <div class="product-info">
+                    <h2>Fruit Salad</h2>
+                    <p>1Cup Fruit Salad</p>
+                    <p>Rs.100</p>
+                    <button class="btn-add-to-cart" onclick="addToCart('Fruit Salad', 100)">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product 6 -->
+            <div class="product">
+                <img src="images/cake.jpg" alt="Cake">
+                <div class="product-info">
+                    <h2>Cake</h2>
+                    <p>Half kg Cake</p>
+                    <p>Rs.100</p>
+                    <button class="btn-add-to-cart" onclick="addToCart('Cake', 100)">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cart -->
+        <div class="cart" id="cart">
+            <h2>Shopping Cart</h2>
+      <div class="total">Total: Rs<span id="totalPrice">0.00</span></div>
+      <button class="place-order-btn" onclick="placeOrder()">Place Order</button>
+  
+        </div>
+        
+    </div>
+
+    <script src="Dessert.js"></script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natural Food
+    </title>
+   <link rel="stylesheet" href="natual.css">
+</head>
+<body>
+  <h1>Natural Food</h1>
+    <div class="container">
+        <div class="product-grid">
+            <!-- Product 1 -->
+            <div class="product">
+                <img src="images/Ellu Urundai.jpg" alt="Ellu Urundai">
+                <div class="product-info">
+                    <h2>Ellu Urundai</h2>
+                   
+                    <p>RS.80</p>
+                    <button class="btn-add-to-cart" onclick="addToCart('Ellu Urundai', 80)">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product">
+                <img src="images/Kolukattai.jpeg" alt="Kolukattai">
+                <div class="product-info">
+                    <h2>Kolukattai</h2>
+                    
+                    <p>Rs.50</p>
+                    <button class="btn-add-to-cart" onclick="addToCart('Kolukattai', 50)">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product">
+                <img src="images/Milletdhosa.jpeg" alt="MilletDhosai">
+                <div class="product-info">
+                    <h2>MilletDhosai</h2>
+                    
+                    <p>Rs.120</p>
+                    <button class="btn-add-to-cart" onclick="addToCart('MilletDhosai', 120)">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="product">
+                <img src="images/Olai  kolukattai.jpg" alt="Pannaollai Kolukattai">
+                <div class="product-info">
+                    <h2>Pannaollai Kolukattai</h2>
+                    
+                    <p>Rs.50</p>
+                    <button class="btn-add-to-cart" onclick="addToCart('Pannaollai Kolukattai', 50)">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product 5 -->
+            <div class="product">
+                <img src="images/Paniyaram.jpeg" alt="Paniyaram">
+                <div class="product-info">
+                    <h2>Paniyaram</h2>
+                    
+                    <p>Rs.90</p>
+                    <button class="btn-add-to-cart" onclick="addToCart('Paniyaram', 90)">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product 6 -->
+            <div class="product">
+                <img src="images/Puttu.jpeg" alt="Puttu">
+                <div class="product-info">
+                    <h2>Puttu</h2>
+                    
+                    <p>Rs.45</p>
+                    <button class="btn-add-to-cart" onclick="addToCart('Puttu', 45)">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cart -->
+        <div class="cart" id="cart">
+            <h2>Shopping Cart</h2>
+      <div class="total">Total: Rs<span id="totalPrice">0.00</span></div>
+      <button class="place-order-btn" onclick="placeOrder()">Place Order</button>
+  
+        </div>
+        
+    </div>
+
+    <script src="natural.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food World</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        setInterval(function(){ document.getElementById('time').innerText = new Date(); });
+ 
+    </script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <h1>Welcome to Food World</h1>
+            <ul>
+                <li id="time"></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="catagory/catagory.html">Category</a></li>
+                <li><a href="Contactus.html" onclick="scrollToContact()">Contact Us</a></li>
+                <li><a href="Feedback/Feedback.html">Feedback</a></li>
+            </ul>
+        </nav>
+        <div class="slideshow-container">
+            <div class="slide fade">
+                <img src="images/image1.jpg" alt="Image 1">
+            </div>
+            <div class="slide fade">
+                <img src="images/image2.jpg" alt="Image 2">
+            </div>
+            <div class="slide fade">
+                <img src="images/image3.jpg" alt="Image 3">
+            </div>
+        </div>
+    </header>
+   <script src="script.js"></script>
+</body>
+</html>

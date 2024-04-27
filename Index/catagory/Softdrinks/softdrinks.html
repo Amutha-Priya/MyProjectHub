@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Softdrinks</title>
+   <link rel="stylesheet" href="Softstyle.css">
+</head>
+<body>
+  <h1>Soft Drinks</h1>
+    <div class="container">
+        <div class="product-grid">
+            <!-- Product 1 -->
+            <div class="product">
+                <img src="images/Rosemilk.jpg" alt="Rosemilk">
+                <div class="product-info">
+                    <h2>Rosemilk</h2>
+                    <p>200 ml Rosemilk</p>
+                    <p>RS.45</p>
+                    <button class="btn-add-to-cart" onclick="addToCart('Rosemilk', 45)">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product">
+                <img src="images/Fruitjuice.jpeg" alt="Fruitjuice">
+                <div class="product-info">
+                    <h2>Fruitjuice</h2>
+                    <p>200ml Fruitjuice</p>
+                    <p>Rs.60</p>
+                    <button class="btn-add-to-cart" onclick="addToCart('Fruitjuice', 60)">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product">
+                <img src="images/Milk Shake.jpg" alt="Milk Shake">
+                <div class="product-info">
+                    <h2>Milk Shake</h2>
+                    <p>200 ml Milk Shake</p>
+                    <p>Rs.70</p>
+                    <button class="btn-add-to-cart" onclick="addToCart('Milk Shake', 70)">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="product">
+                <img src="images/sugarcane.jpg" alt="sugarcane">
+                <div class="product-info">
+                    <h2>sugarcane</h2>
+                    <p>200ml sugarcane</p>
+                    <p>Rs.50</p>
+                    <button class="btn-add-to-cart" onclick="addToCart('sugarcane', 50)">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product 5 -->
+            <div class="product">
+                <img src="images/jigarthanda.jpg" alt="Jigarthanda">
+                <div class="product-info">
+                    <h2>Jigarthanda</h2>
+                    <p>200ml Jigarthanda</p>
+                    <p>Rs.75</p>
+                    <button class="btn-add-to-cart" onclick="addToCart('Jigarthanda', 75)">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product 6 -->
+            <div class="product">
+                <img src="images/ColdCoffee.jpg" alt="ColdCoffee">
+                <div class="product-info">
+                    <h2>ColdCoffee</h2>
+                    <p>200ml ColdCoffee</p>
+                    <p>Rs.100</p>
+                    <button class="btn-add-to-cart" onclick="addToCart('ColdCoffee, 100')">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cart -->
+        <div class="cart" id="cart">
+            <h2>Shopping Cart</h2>
+      <div class="total">Total: Rs<span id="totalPrice">0.00</span></div>
+      <button class="place-order-btn" onclick="placeOrder()">Place Order</button>
+  
+        </div>
+        
+    </div>
+
+    <script src="Softdrinks.js"></script>
+</body>
+</html>

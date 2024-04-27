@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NorthIndian Style</title>
+   <link rel="stylesheet" href="northstyle.css">
+</head>
+<body>
+  <h1>NorthInidan Dishes</h1>
+    <div class="container">
+        <div class="product-grid">
+            <!-- Product 1 -->
+            <div class="product">
+                <img src="images/meals.jpg" alt="Meals">
+                <div class="product-info">
+                    <h2>Meals</h2>
+                    <p>Unlimited Meals</p>
+                    <p>RS.200</p>
+                    <button class="btn-add-to-cart" onclick="addToCart('Meals', 200)">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product">
+                <img src="images/Punjabithali.jpg" alt="Punjabithali">
+                <div class="product-info">
+                    <h2>PunjabiThali</h2>
+                    <p>1 PunjabiThali </p>
+                    <p>Rs.90</p>
+                    <button class="btn-add-to-cart" onclick="addToCart('Punjabithali', 90)">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product">
+                <img src="images/briyani.jpg" alt="Briyani">
+                <div class="product-info">
+                    <h2>Briyani</h2>
+                    <p>1 Plate Briyani</p>
+                    <p>Rs.150</p>
+                    <button class="btn-add-to-cart" onclick="addToCart('Briyani', 150)">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="product">
+                <img src="images/butter nann.jpg" alt="Butter Nann">
+                <div class="product-info">
+                    <h2>Butter Nann</h2>
+                    <p>2Nann with Gravy</p>
+                    <p>Rs.100</p>
+                    <button class="btn-add-to-cart" onclick="addToCart('Butter Nann', 100)">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product 5 -->
+            <div class="product">
+                <img src="images/Chilli parrota.jpg" alt="ChilliParota">
+                <div class="product-info">
+                    <h2>ChilliParrota</h2>
+                    <p>1 Plate Parrota</p>
+                    <p>Rs.80</p>
+                    <button class="btn-add-to-cart" onclick="addToCart('ChilliParrota', 80)">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product 6 -->
+            <div class="product">
+                <img src="images/panner pulao.jpg" alt="PannerPulao">
+                <div class="product-info">
+                    <h2>PannerPulao</h2>
+                    <p>1 Plate PannerPulao</p>
+                    <p>Rs.90</p>
+                    <button class="btn-add-to-cart" onclick="addToCart('PannerPulao', 90)">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cart -->
+        <div class="cart" id="cart">
+            <h2>Shopping Cart</h2>
+      <div class="total">Total: Rs<span id="totalPrice">0.00</span></div>
+      <button class="place-order-btn" onclick="placeOrder()">Place Order</button>
+  
+        </div>
+        
+    </div>
+
+    <script src="northjava.js"></script>
+</body>
+</html>

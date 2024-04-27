@@ -1,0 +1,56 @@
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+
+  .gallery:hover .image-link {
+    opacity: 1; /* Show link on hover */
+  }
+  
+  /* Styles for the items list */
+  
+  .image-link {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: rgba(14, 13, 13, 0.911);
+    padding: 5px 10px;
+    text-decoration: none;
+    opacity: 0; /* Initially transparent */
+    transition: opacity 0.3s ease;
+  }
+  
+  .image-container:hover .image-link {
+    opacity: 1; /* Show link on hover */
+  }
+  
+.image-container {
+    position: relative;
+    margin: 20px;
+  }
+  
+  .image-container img {
+    width: 320px;
+    height: 250px;
+margin-left: 15px;
+    margin-top: 10px;
+    padding: 10px;
+    cursor: pointer;
+  }
+ 
+
+  h1{
+    font-size: 50px;
+    color: aliceblue;
+    text-align: center;
+    font-size: 40px;
+    color: aliceblue;
+    text-align: center;
+
+    font-family: math;
+    font-family: math;
+    color: black;
+  }

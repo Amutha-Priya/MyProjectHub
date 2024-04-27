@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SouthIndian Style</title>
+   <link rel="stylesheet" href="southstyle.css">
+</head>
+<body>
+  <h1>SouthInidan Dishes</h1>
+    <div class="container">
+        <div class="product-grid">
+            <!-- Product 1 -->
+            <div class="product">
+                <img src="images/idly.jpg" alt="Idly">
+                <div class="product-info">
+                    <h2>Idly</h2>
+                    <p>3 idly with 1 vada</p>
+                    <p>RS.50</p>
+                    <button class="btn-add-to-cart" onclick="addToCart('Idly', 50)">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product">
+                <img src="images/Dhosa.jpg" alt="Dhosa">
+                <div class="product-info">
+                    <h2>Dhosa</h2>
+                    <p>one dhosa</p>
+                    <p>Rs.40</p>
+                    <button class="btn-add-to-cart" onclick="addToCart('Dhosa', 40)">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product">
+                <img src="images/Poori.jpg" alt="Poori">
+                <div class="product-info">
+                    <h2>Poori</h2>
+                    <p>Provide 2 poori</p>
+                    <p>Rs.30</p>
+                    <button class="btn-add-to-cart" onclick="addToCart('Poori', 30)">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="product">
+                <img src="images/Meals.jpg" alt="Meals">
+                <div class="product-info">
+                    <h2>Meals</h2>
+                    <p>400grams of Meals</p>
+                    <p>Rs.80</p>
+                    <button class="btn-add-to-cart" onclick="addToCart('Meals', 80)">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product 5 -->
+            <div class="product">
+                <img src="images/briyani.jpg" alt="Briyani">
+                <div class="product-info">
+                    <h2>Briyani</h2>
+                    <p>Full briyani with 3extra items</p>
+                    <p>Rs.100</p>
+                    <button class="btn-add-to-cart" onclick="addToCart('Briyani', 100)">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product 6 -->
+            <div class="product">
+                <img src="images/Pongal.jpg" alt="Pongal">
+                <div class="product-info">
+                    <h2>Pongal</h2>
+                    <p>1 single cup of Pongal</p>
+                    <p>Rs.35</p>
+                    <button class="btn-add-to-cart" onclick="addToCart('Pongal', 35)">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cart -->
+        <div class="cart" id="cart">
+            <h2>Shopping Cart</h2>
+      <div class="total">Total: Rs<span id="totalPrice">0.00</span></div>
+      <button class="place-order-btn" onclick="placeOrder()">Place Order</button>
+  
+        </div>
+        
+    </div>
+
+    <script src="southjava.js"></script>
+</body>
+</html>

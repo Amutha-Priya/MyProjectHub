@@ -1,0 +1,94 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+border-radius: 10%;
+    padding: 20px;
+    z-index: 9999;
+  }
+  
+  .navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  .navbar h1{
+    font-size: 40px;
+    color: aliceblue;
+    text-align: center;
+    text-shadow:
+    10px 10px 10px rgb(233, 13, 13),
+    10px 10px 10px rgb(224, 8, 19);
+    font-family: math;
+  }
+  
+  .navbar ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  .navbar ul li p {
+    display: inline;
+    font-size: 20px;
+    color: white;
+    padding-right: 60px;
+    font-family: math;
+  }
+  
+  .navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    margin-left: 40px;
+    transition: color 0.3s;
+  }
+  
+  .navbar ul li a:hover {
+   
+    background-color: rgb(236, 15, 15);
+    background-position: 10px;
+    border-radius: 5px;
+    
+  }
+  
+  
+.slideshow-container {
+    position: relative;
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  .slide {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;  
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .slide img {
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-position: center;
+  }
+  #time{
+    color: aliceblue;
+  }

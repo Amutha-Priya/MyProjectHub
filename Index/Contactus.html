@@ -1,0 +1,64 @@
+<html>
+    
+    <head>
+        <title>ContactUS</title>
+        <style>
+            body{
+                background-color: rgba(255, 196, 0, 0.76);
+            }
+            .container {
+        display: flex;
+        position: relative; /* Required for positioning the pseudo-element */
+    }
+    .column {
+        flex: 1;
+        padding: 20px;
+        position: relative; /* Required for positioning the pseudo-element */
+        margin-left: 250px;
+        margin-top: 100px;
+    }
+   .container .column1 {
+        flex: 1;
+       
+        position: relative; /* Required for positioning the pseudo-element */
+        margin-top: 100px;
+    }
+    .container .column1 p{
+        margin-left: 100px;
+    }
+    .container::before {
+        content: "";
+        position: absolute;
+        top: 20px;
+        bottom: -150px;
+        left: 50%; /* Position the line in the center */
+        width: 2px; /* Width of the line */
+        background-color: black; /* Color of the line */
+        transform: translateX(-50%); /* Center the line */
+      
+    }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="column">
+                <h1>Contact Us</h1>
+                <h3>Amutha</h3>
+                <p>Gmail: amuthacse29@gmail.com</p>
+                <p>Phone: +91-9094519871</p>
+                <p>www.foodworld.com</p>
+                <p>Contact address<address>Mr John Smith. 132, <br>My Street, Kingston, Chennai-626001.<br> TamilNadu.</address></p>
+              </div>
+            <div class="column1">
+                <h1>Time Duration</h1>
+                <p>Monday&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Morning:9am-Night:9pm</p>
+                <p>Tuesday&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Morning:9am-Night:9pm</p>
+                <p>Wednesday&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Morning:9am-Night:9pm</p>
+                <p>Thurday&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Morning:9am-Night:9pm</p>
+                <p>Friday&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Morning:9am-Night:9pm</p>
+                <p>Saturday&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Morning:9am-Afternoon:2pm</p>
+                 <p>Sunday holiday</p>
+            </div>
+
+    </body>
+</html>
