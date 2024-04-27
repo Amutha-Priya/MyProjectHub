@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <title>Registration Form</title>
+  <style>
+body{
+background-color:#A9A9A9;
+}
+    form {
+      max-width: 400px;
+      margin: auto;
+
+
+    }
+
+  
+
+    input {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 16px;
+      box-sizing: 100px;
+    }
+
+    button {
+      background-color:#4caf50;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+  textarea {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 16px;
+      box-sizing: border-box;
+    }
+
+</style>
+    <script>
+        function validateInput() {
+ var name = document.getElementById("userInput").value;
+            var email = document.getElementById("userAddress").value;
+  var phone = document.getElementById("phone").value;
+
+
+            // Check if any of the fields are empty
+            if (name === "" || email === "" || phone==="") {
+                alert("Please fill out all the required fields before submitting the form.");
+                return false; // Prevent form submission
+            }else{ alert('Form Submited');}}
+
+function goBack() {
+window.history.back()
+            }
+                
+    
+    </script>
+</head>
+<body>
+<h1 align=center>Registration Form<h1>
+
+  <form action="#" method="post">
+    <label for="userInput">Username:</label>
+    <input type="text" id="userInput" name="userInput" required>
+
+  
+ <label for="address">Address:</label>
+    <textarea id="userAddress" name="address" rows="4" required></textarea>
+
+<label for="phone">Phone Number:</label>
+ <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" maxlength="10" placeholder="Enter a 10-digit phone number" required>
+
+<button type="submit" value="Submit" onclick="return validateInput();">Place to order</button>
+<button type="submit" value="Submit" onclick="goBack();"><a href="home.html">Back</a></button>
+  </form>
+
+</body>
+</html>
